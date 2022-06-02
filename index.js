@@ -2,13 +2,17 @@
 const express = require('express');
 //express function
 const app = express();
-//Deprecation of res.sendfile is invalid, "sendFile" is currently not working, so ignore the console log, as it's not true.
+//Deprecation of res.sendfile is invalid, "sendFile" is currently not working, so ignore the console log, as it's not true.d
 
 // GET / file/index landing
 app.get('/', (req, res) => {
   res.sendfile('index.html')
 });
 // GET/SEND file
+app.get('/courses', (req, res) => {
+  res.sendfile('courses/index.html')
+}); 
+
 
 
 app.use('/public', express.static(process.cwd() + '/public'));
