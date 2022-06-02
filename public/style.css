@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Inter:wght@500&display=swap');
+
+
+body, html {
+  height: 100%; 
+  margin: 0;
+  color: #030303;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: url('../images/bg.svg') no-repeat;
+  background-size: cover;
+  
+}
+
+
+.headline {
+margin: auto;
+text-align: center;
+padding: 40px;
+}
+
+
+
+.whatcontent {
+  display: grid;
+  text-align: center;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: #5e5ec9;
+  text-decoration: none;
+}
+a:hover {
+  color: #8585ff;
+}
+
+.footer {
+   margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+.what {
+  margin: auto;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 40px;
+  width: 350px;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .what {
+  margin: auto;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 40px;
+  width: 200px;
+}
+}

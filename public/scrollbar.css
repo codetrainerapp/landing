@@ -1,0 +1,39 @@
+ html::-webkit-scrollbar {
+      width: 20px;
+      
+    }
+   html::-webkit-scrollbar-track {
+    
+    
+    background-color: black;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 25px;
+   }
+/* minimalist design */ 
+html::-webkit-scrollbar {
+    width: 7px;
+    
+  }
+
+  html::-webkit-scrollbar-track {
+    background: rgb(218, 215, 215);
+    border-radius: 3px;
+}
+
+  html::-webkit-scrollbar-thumb {
+    background: rgb(158, 158, 158);
+    border-radius: 3px;
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background: rgb(145, 145, 145);
+    border-radius: 3px;
+  }
+
+  html::-webkit-scrollbar-thumb:active {
+    background: rgb(115, 115, 115);
+    border-radius: 3px;
+  }
