@@ -1,55 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CodeTrainer - Courses</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Learning to code just got a whole lot easier. Why don't you choose a course to learn?" />
-    <link rel="stylesheet" href="public/style.css" />
-    <link rel="stylesheet" href="public/scrollbar.css" />
+    <head>
+        <title>CodeTrainer - Courses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learning to code just got a whole lot easier. Why don't you choose a course to learn?"
+        />
+        <link rel="stylesheet" href="public/style.css" />
+        <link rel="stylesheet" href="public/scrollbar.css" />
         <script src="public/script.js" defer></script>
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link
-    rel="icon"
-    href="https://cdn.glitch.global/14daf2d0-0488-4b16-9d71-e95e4298f1e6/Logo1.png"
-    type="image/png"
-  />
-    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            rel="icon"
+            href="https://cdn.glitch.global/14daf2d0-0488-4b16-9d71-e95e4298f1e6/Logo1.png"
+            type="image/png"
+        />
+    </head>
 
-  </head>
-<body>
- <div> 
-   
-   <nav class="main">
-     <!--
-     <a href="/contact">Contact Us</a>
-     &nbsp;&nbsp;&nbsp;
-     <a href="/about">About Us</a>
-   -->
+    <style>
+        .navbar-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+        }
 
-   </nav>
- </div>
-<div class="center">
+        a {
+            color: black;
+            text-decoration: none;
+        }
 
-  </div>
+        .responsive {
+            display: block;
+        }
 
-<div class="footer">
-  <p>
-   <a href="https://github.com/codetrainerapp">GitHub</a> | <a href="https://discord.gg/tVgkzJagsh">Discord</a> | <a href="mailto:support@codetrainer.xyz">Support</a>
-    </p>
+        .logo {
+            width: 10%;
+            height: 10%;
+            margin-left: 5%;
+            margin-top: -1%;
+            cursor: pointer;
+        }
 
-  </div>
+        @media screen and (max-width: 1225px) {
+            .responsive {
+                display: none;
+            }
+        }
 
-</body>
+        .lesson-container {
+            padding: 10px;
+            width: 400px;
+            border: 5px solid black;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .langsholder {
+            border: 5px solid black;
+            width: 65%;
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            padding: 50px;
+            gap: 40px;
+            border-radius: 20px;
+        }
+
+        .lang {
+            padding: 50px 10px 50px 10px;
+            border-radius: 15px;
+        }
+
+        .open {
+            background-color: skyblue;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .open:hover {
+            background-color: #5863f8;
+        }
+
+        .closed {
+            background-color: darkgrey;
+            color: lightgrey;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <body>
+        <div class="navbar-left" data-aos="fade-right">
+            <img
+                src="https://cdn.glitch.global/14daf2d0-0488-4b16-9d71-e95e4298f1e6/Logo1.png"
+                style="
+                    width: 25%;
+                    height: 25%;
+                    margin-left: 5%;
+                    margin-top: -1%;
+                    cursor: pointer;
+                "
+                onclick="window.location.reload()"
+            />
+            <div
+                class="nav-btn responsive"
+                style="margin-left: -300px"
+                data-aos="fade-right"
+            >
+                <h1><a href="/">CodeTrainer</a></h1>
+            </div>
+        </div>
+
+        <!-- Page Body -->
+        <div
+            style="padding-top: 100px; padding-bottom: 150px"
+            data-aos="fade-right"
+        >
+            <center>
+                <h1>Explore Courses</h1>
+                <div class="langsholder">
+                    <a
+                        class="lang open"
+                        href="/en-US/landing/404"
+                        data-aos="fade-up"
+                    >
+                        HTML
+                    </a>
+                    <a class="lang closed" data-aos="fade-up"> CSS </a>
+                    <a class="lang closed" data-aos="fade-up"> JavaScript </a>
+                    <a class="lang closed" data-aos="fade-up"> PHP </a>
+                    <a class="lang closed" data-aos="fade-up"> Python </a>
+                    <a class="lang closed" data-aos="fade-up"> Java </a>
+                    <a class="lang closed" data-aos="fade-up"> C </a>
+                    <a class="lang closed" data-aos="fade-up"> C# </a>
+                    <a class="lang closed" data-aos="fade-up"> C++ </a>
+                    <a class="lang closed" data-aos="fade-up"> Lua </a>
+                    <a class="lang closed" data-aos="fade-up"> Kotlin </a>
+                    <a class="lang closed" data-aos="fade-up"> Rust </a>
+                    <a class="lang closed" data-aos="fade-up"> Golang </a>
+                    <a class="lang closed" data-aos="fade-up"> .Net </a>
+                    <a class="lang closed" data-aos="fade-up"> Swift </a>
+                </div>
+            </center>
+        </div>
+    </body>
 </html>
-
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1500,
-    once: true,
-  });
+    AOS.init({
+        duration: 1500,
+        once: true,
+    });
 </script>
-
-
-
