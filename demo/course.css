@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Inter:wght@500&display=swap');
+
+
+body, html {
+  height: 100%; 
+  margin: 0;
+  color: #030303;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.chapter-list {
+  float: right;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 20px;
+  text-align: center;
+  margin: 10px;
+  display: absolute;
+  border: 2px solid #3554d0;
+  border-radius: 5px;
+  height: auto;
+  width: 100px;
+ 
+}
+
+.chapter-list:p {
+  padding: 5px;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: #5e5ec9;
+  text-decoration: none;
+  isolation: isolate;
+}
+a:hover {
+  color: #8585ff;
+}
+
+.footer {
+   margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.navigation {
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.mobile-noncomp {
+  display: none;
+}
+
+.course-content {
+ width: 700px;
+ text-align: left;
+ margin: auto;
+}
+
+.tryit {
+  background: lightgray;
+  isolation: isolate;
+  width: 700px;
+  height: auto; 
+  color: #da4e4e;
+  text-align: left;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+.mobile-noncomp {
+  display: flex;
+}
+}

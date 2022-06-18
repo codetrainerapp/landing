@@ -17,6 +17,7 @@ app.get('/courses', (req, res) => {
 
 app.use('/public', express.static(process.cwd() + '/public'));
 app.use('/images', express.static(process.cwd() + '/images'));
+app.use('/demo', express.static(process.cwd() + '/demo'));
 // Handle 404
 app.use(function(req, res) {
   res.sendfile('errors/404.htm', 404);
